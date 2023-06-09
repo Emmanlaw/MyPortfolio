@@ -11,12 +11,13 @@ body {
 }
 
 footer {
+    margin-top: 10%;
     background-color: rgb(16, 54, 110);
     color: whitesmoke;
 }
 footer h2 {
     text-align: center;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 footer p, address {
     margin-left: 5%;
@@ -54,6 +55,17 @@ li img {
 .img__p p {
     background-color: rgb(255, 255, 255);
 }
+span img, a{
+    width: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+h3 {
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    gap: 6px;
+}
 
 
 @media (max-width:600px) {
@@ -78,7 +90,6 @@ li img {
         color: var(--white);
         text-shadow: 2px 2px 2px var(--black);
         font-size: 2rem;
-
     }
 
     main {
@@ -88,8 +99,8 @@ li img {
         width: 80%;
         margin: 0 auto;
         gap: 25px;
+        margin-bottom: 10%;
     }
-    
 }
 
 
@@ -131,15 +142,21 @@ li img {
     }
 
     main {
-        margin-top: 20%;
+        margin-top: 10%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3%;
-        margin: 0 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        gap: 3%
     }
     .main__mywork {
         grid-column: 1/3;
         text-align: center;
+    }
+    footer {
+        margin-top: 25%;
+        background-color: rgb(16, 54, 110);
+        color: whitesmoke;
     }
 }
 
@@ -214,5 +231,10 @@ li img {
     .main__mywork {
         grid-column: 1/4;
         text-align: center;
+    }
+    footer {
+        margin-top: 10%;
+        background-color: rgb(16, 54, 110);
+        color: whitesmoke;
     }
 }
